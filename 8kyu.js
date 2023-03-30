@@ -20,7 +20,6 @@ function countSheeps(arr){
 // function countSheeps(arrayOfSheeps) {
 //     return arrayOfSheeps.filter(Boolean).length;
 //   }
-
 // or
 // const countSheeps = arrayOfSheeps => arrayOfSheeps.filter(s => s).length;
 
@@ -37,3 +36,13 @@ const flip=(d, a)=>{
 
 // Cleanest solution
 // const flip = (d, a) => a.sort((x, y) => d === 'R' ? x - y : y - x);
+
+
+//Remove String spaces
+//Write a function that removes the spaces from the string, then return the resultant string.
+const noSpace = (x) => {return x.split("").filter(y => y !==" ").join("");}
+
+//most popular solution
+// function noSpace(x){
+//   return x.replace(/\s/g, '');
+// }
