@@ -15,3 +15,17 @@ function disemvowel(str){
 
 // Better solution
 // disemvowel = str => str.replace(/[aeiou]/gi,'');
+
+
+//Sum of Even Numbers
+// Complete the function that takes a sequence of numbers as single parameter. Your function must return the sum of the even values of this sequence.
+
+// Only numbers without decimals like 4 or 4.0 can be even.
+
+// The input is a sequence of numbers: integers and/or floats.
+function sumEvenNumbers(x){
+    let w = x.filter(y => y % 2 === 0)
+    return w.reduce((a,b) => a+b, 0);
+}
+//shorter solution
+//sumEvenNumbers = input => input.filter(x => x % 2 == 0).reduce((x, y) => x + y, 0)
