@@ -41,3 +41,13 @@ function betweenExtremes(a) {
 //   Shorter solutions
 //   const betweenExtremes = a => (b => b[0] - b[b.length-1])(a.sort((x, y) => y - x))
 //   const betweenExtremes = numbers => Math.max(...numbers) - Math.min(...numbers);
+
+// Keep The Order
+// Your job here is to write a function (keepOrder in JS/CoffeeScript, keep_order in Ruby/Crystal/Python, keeporder in Julia), which takes a sorted array ary and a value val, and returns the lowest index where you could insert val to maintain the sorted-ness of the array. The input array will always be sorted in ascending order. It may contain duplicates.
+
+const keepOrder = (ary, val) => ary.concat(val).sort((x,y) => x-y).indexOf(val)
+
+// other solution
+// function keepOrder(ary, val) {
+//   return ary.filter(a => a < val).length;
+// }
