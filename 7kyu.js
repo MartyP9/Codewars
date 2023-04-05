@@ -13,8 +13,8 @@ function disemvowel(str){
     return str.split("").filter(lett => !vowels.includes(lett)).join("");
 }
 
-// Better solution
-// disemvowel = str => str.replace(/[aeiou]/gi,'');
+//  Better solution
+//  disemvowel = str => str.replace(/[aeiou]/gi,'');
 
 
 //Sum of Even Numbers
@@ -27,5 +27,17 @@ function sumEvenNumbers(x){
     let w = x.filter(y => y % 2 === 0)
     return w.reduce((a,b) => a+b, 0);
 }
-//shorter solution
-//sumEvenNumbers = input => input.filter(x => x % 2 == 0).reduce((x, y) => x + y, 0)
+//  shorter solution
+//  sumEvenNumbers = input => input.filter(x => x % 2 == 0).reduce((x, y) => x + y, 0)
+
+
+// Between Extremes
+// Given an array of numbers, return the difference between the largest and smallest values.
+
+function betweenExtremes(a) {
+    let b = a.sort((x,y) => x-y)
+    return (b[b.length-1] - b[0])
+  }
+//   Shorter solutions
+//   const betweenExtremes = a => (b => b[0] - b[b.length-1])(a.sort((x, y) => y - x))
+//   const betweenExtremes = numbers => Math.max(...numbers) - Math.min(...numbers);
