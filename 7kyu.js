@@ -75,3 +75,9 @@ function isItANum(s) {
 // largest(2, [7,6,5,4,3,2,1])
 // // => [6,7]
 const largest = (n,x) => n ? x.sort((a,b)=>a-b).slice(-n): [];
+
+//Identical elements
+// Given two arrays of integers m and n, test if they contain at least one identical element. Return true if they do; false if not.
+
+// Your code must handle any value within the range of a 32-bit integer, and must be capable of handling either array being empty (which is a false result, as there are no duplicated elements).
+let duplicateElements = (m,n) => m.some(x => n.includes(x));
