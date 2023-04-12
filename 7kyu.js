@@ -47,9 +47,9 @@ function betweenExtremes(a) {
 
 const keepOrder = (ary, val) => ary.concat(val).sort((x,y) => x-y).indexOf(val)
 
-// other solution
-// function keepOrder(ary, val) {
-//   return ary.filter(a => a < val).length;
+//      other solution
+//      function keepOrder(ary, val) {
+//      return ary.filter(a => a < val).length;
 // }
 
 //Fix my Phone Numbers!
@@ -81,3 +81,18 @@ const largest = (n,x) => n ? x.sort((a,b)=>a-b).slice(-n): [];
 
 // Your code must handle any value within the range of a 32-bit integer, and must be capable of handling either array being empty (which is a false result, as there are no duplicated elements).
 let duplicateElements = (m,n) => m.some(x => n.includes(x));
+
+// Sort array by string length
+// Write a function that takes an array of strings as an argument and returns a sorted array containing the same strings, ordered from shortest to longest.
+
+// For example, if this array were passed as an argument:
+
+// ["Telescopes", "Glasses", "Eyes", "Monocles"]
+
+// Your function would return the following array:
+
+// ["Eyes", "Glasses", "Monocles", "Telescopes"]
+
+// All of the strings in the array passed to your function will be different lengths, so you will not have to decide how to order multiple strings of the same length.
+
+const sortByLength = (array) => array.sort((a,b)=>a.length-b.length)
