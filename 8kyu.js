@@ -71,3 +71,7 @@ function bmi(weight, height) {
 function feast(beast, dish) {
   return (beast[0] === dish[0] && beast[beast.length -1] === dish[dish.length -1])
   }
+
+  //Sum of positive
+  
+  const positiveSum = (arr) => arr.filter(x => x > 0).reduce((a,b) => a+b, 0)
