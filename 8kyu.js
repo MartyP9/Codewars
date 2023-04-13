@@ -89,3 +89,12 @@ function digitize(n) {
   return String(n).split('').reverse().map(Number)
 }
 // Note: Not sure why it needs to be converted to string then back to number. It worked fine in without it in VSCode but not the testing
+
+//A Needle in the Haystack
+
+// Can you find the needle in the haystack
+// Write a function findNeedle() that takes an array full of junk but containing one "needle"
+// After your function finds the needle it should return a message (as a string) that says:
+// "found the needle at position " plus the index it found the needle
+
+const findNeedle = n => 'found the needle at position ' + n.indexOf('needle')
