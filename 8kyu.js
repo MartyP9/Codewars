@@ -79,3 +79,13 @@ const positiveSum = (arr) => arr.filter(x => x > 0).reduce((a,b) => a+b, 0)
 // Square(n) Sum
 
 const squareSum = (numbers) => numbers.reduce((a,b) => a + b**2 , 0)
+
+// Convert number to reversed array of digits
+
+// Convert number to reversed array of digits
+// Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+
+function digitize(n) {
+  return String(n).split('').reverse().map(Number)
+}
+// Note: Not sure why it needs to be converted to string then back to number. It worked fine in without it in VSCode but not the testing
