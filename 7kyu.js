@@ -96,3 +96,11 @@ let duplicateElements = (m,n) => m.some(x => n.includes(x));
 // All of the strings in the array passed to your function will be different lengths, so you will not have to decide how to order multiple strings of the same length.
 
 const sortByLength = (array) => array.sort((a,b)=>a.length-b.length)
+
+
+//Sum of two lowest positive integers
+//Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+function sumTwoSmallestNumbers(n) {  
+    n.sort((a,b)=> a-b);
+    return n[0] + n[1];
+}
