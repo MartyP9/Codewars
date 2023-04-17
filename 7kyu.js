@@ -100,7 +100,14 @@ const sortByLength = (array) => array.sort((a,b)=>a.length-b.length)
 
 //Sum of two lowest positive integers
 //Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+
 function sumTwoSmallestNumbers(n) {  
     n.sort((a,b)=> a-b);
     return n[0] + n[1];
 }
+
+// Ones and Zeros
+//Given an array of ones and zeroes, convert the equivalent binary value to an integer.
+// Eg: [0, 0, 0, 1] is treated as 0001 which is the binary representation of 1.
+
+const binaryArrayToNumber = n => parseInt(n.join(''), 2); 
