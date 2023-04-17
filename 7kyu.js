@@ -111,3 +111,10 @@ function sumTwoSmallestNumbers(n) {
 // Eg: [0, 0, 0, 1] is treated as 0001 which is the binary representation of 1.
 
 const binaryArrayToNumber = n => parseInt(n.join(''), 2); 
+
+//  Sum of odd numbers
+// Given the triangle of consecutive odd numbers:
+// Calculate the sum of the numbers in the nth row of this triangle (starting at index 1) e.g.: (Input --> Output)
+function rowSumOddNumbers(n) {
+	return n**3;
+}
