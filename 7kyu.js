@@ -152,3 +152,14 @@ function highAndLow (n){
 //   numbers = numbers.split(' ');
 //   return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
 // }
+
+
+//   Descending Order
+// Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+
+const descendingOrder = n => +(n.toString().split('').sort((a,b) => +b - +a).join(''))
+
+// other possible solution 
+// function descendingOrder(n){
+//   return parseInt(String(n).split('').sort().reverse().join(''))
+// }
