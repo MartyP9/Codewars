@@ -163,3 +163,20 @@ const descendingOrder = n => +(n.toString().split('').sort((a,b) => +b - +a).joi
 // function descendingOrder(n){
 //   return parseInt(String(n).split('').sort().reverse().join(''))
 // }
+
+//   Get the Middle Character
+
+// You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
+
+function getMiddle (n) {
+    let len = n.split('').length
+    if (len % 2 === 0){
+    return n.split('').slice(len/2 -1 , len/2 + 1).join('')} 
+    else return n.split('').slice(len/2, len/2 + 1).join('');
+}
+console.log(getMiddle('Potatos'))
+
+// Cleaner Solution
+// function getMiddle(s){
+//   return s.slice((s.length-1)/2, s.length/2+1);
+// }
