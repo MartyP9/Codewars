@@ -52,3 +52,19 @@ const arrayDiff = (a,b) => a.filter(x=> b.indexOf(x) === -1)
 
 // Other solution 
 //const array_diff = (a, b) => a.filter(x => !b.includes(x));
+
+
+//    Create Phone Number
+// Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number. The returned format must be correct in order to complete this challenge. Don't forget the space after the closing parentheses!
+
+function createPhoneNumber(arr){
+  let x = arr.slice(0,3).join('')
+  let y = arr.slice(3,6).join('')
+  let z = arr.slice(6,10).join('')
+  return `(${x}) ${y}-${z}`
+}
+
+//Cleaner solution
+//function createPhoneNumber(numbers){
+//   return numbers.reduce((p,c) => p.replace('x',c), "(xxx) xxx-xxxx");
+// }
