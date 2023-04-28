@@ -99,3 +99,10 @@ function tribonacci (arr,n){
 // The tests contain some very huge arrays, so think about performance.
 
 const findUniq = arr => +arr.filter((a) => arr.indexOf(a) === arr.lastIndexOf(a))
+
+// Sort the odd
+// You will be given an array of numbers. You have to sort the odd numbers in ascending order while leaving the even numbers at their original positions.
+function sortArray(arr) {
+  const odd = arr.filter((x) => x % 2).sort((a,b) => a - b);
+  return arr.map((x) => x % 2 ? odd.shift() : x);
+}
