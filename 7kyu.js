@@ -238,3 +238,14 @@ function dontGiveMeFive(start, end) {
         }
     return count;
 }
+
+//     The highest profit wins!
+// Write a function that returns both the minimum and maximum number of the given list/array.
+function minMax(n){
+    let x = n.sort((a,b)=>a-b,0)
+    return [x[0], x[x.length-1]]
+}
+console.log(minMax([5,233467,2,6,7]))
+
+// Other solution
+// const minMax = arr=> [Math.min(...arr), Math.max(...arr)];
