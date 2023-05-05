@@ -121,4 +121,12 @@ const humanYearsCatYearsDogYears = function(n) {
   let d = 15 + ((n>2) ? (9+(n-2)*5):n===2?9:0)
   return [n,c,d];
 }
-console.log(humanYearsCatYearsDogYears(10))
+
+//    Well of Ideas - Easy Version
+// In this kata you need to check the provided array (x) for good ideas 'good' and bad ideas 'bad'. If there are one or two good ideas, return 'Publish!', if there are more than 2 return 'I smell a series!'. If there are no good ideas, as is often the case, return 'Fail!'.
+
+let arr = ['bad', 'bad', 'bad', 'bad', 'bad']
+function well(arr){
+    let w = arr.filter(x=>x=='good').length
+    return w == 0 ? 'Fail!': w<3? 'Publish!': 'I smell a series!'
+}
