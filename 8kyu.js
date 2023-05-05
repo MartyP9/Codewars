@@ -130,3 +130,8 @@ function well(arr){
     let w = arr.filter(x=>x=='good').length
     return w == 0 ? 'Fail!': w<3? 'Publish!': 'I smell a series!'
 }
+
+//   N-th Power
+// You are given an array with positive numbers and a non-negative number N. You should find the N-th power of the element in the array with the index N. If N is outside of the array, then return -1. Don't forget that the first element has the index 0.
+
+const index = (a,n) => isNaN(a[n]**n) ?-1: a[n]**n
