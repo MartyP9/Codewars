@@ -98,3 +98,27 @@ function digitize(n) {
 // "found the needle at position " plus the index it found the needle
 
 const findNeedle = n => 'found the needle at position ' + n.indexOf('needle')
+
+
+//     Cat years, Dog years
+// I have a cat and a dog.
+// I got them at the same time as kitten/puppy. That was humanYears years ago.
+// Return their respective ages now as [humanYears,catYears,dogYears]
+
+// humanYears >= 1
+// humanYears are whole numbers only
+// Cat Years
+// 15 cat years for first year
+// +9 cat years for second year
+// +4 cat years for each year after that
+// Dog Years
+// 15 dog years for first year
+// +9 dog years for second year
+// +5 dog years for each year after that
+
+const humanYearsCatYearsDogYears = function(n) {
+  let c = 15 + ((n>2) ? (9+(n-2)*4):n===2?9:0)
+  let d = 15 + ((n>2) ? (9+(n-2)*5):n===2?9:0)
+  return [n,c,d];
+}
+console.log(humanYearsCatYearsDogYears(10))
