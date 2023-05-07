@@ -143,3 +143,10 @@ const index = (a,n) => isNaN(a[n]**n) ?-1: a[n]**n
 // The function receives one parameter health which will always be a whole number between -10 and 10.
 
 const checkAlive = n => n>0 
+
+//     Get Nth Even Number
+
+// Return the Nth Even Number
+// 1 --> 0 (the first even number is 0)
+// 3 --> 4 (the 3rd even number is 4 (0, 2, 4))
+const nthEven = n => (n-1)*2
