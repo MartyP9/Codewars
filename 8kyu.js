@@ -150,3 +150,14 @@ const checkAlive = n => n>0
 // 1 --> 0 (the first even number is 0)
 // 3 --> 4 (the 3rd even number is 4 (0, 2, 4))
 const nthEven = n => (n-1)*2
+
+//   Generate range of integers
+// Implement a function named generateRange(min, max, step), which takes three arguments and generates a range of integers from min to max, with the step. The first integer is the minimum value, the second is the maximum of the range and the third is the step. (min < max)
+
+function generateRange(min, max, step){
+  let range =[]
+  for (i=min; i <=max; i+step){
+      range.push(i)
+  }
+      return range
+}
