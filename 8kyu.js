@@ -168,3 +168,10 @@ function generateRange(min, max, step){
 // With the 1st floor being replaced by the ground floor and the 13th floor being removed, the numbers move down to take their place. In case of above 13, they move down by two because there are two omitted numbers below them.
 
 const getRealFloor = n => n<=0 ? n: n>13? n-2: n-1;
+
+//    Simple Fun #1: Seats in Theater
+//Given the total number of rows and columns in the theater (nRows and nCols, respectively), and the row and column you're sitting in, return the number of people who sit strictly behind you and in your column or to the left, assuming all seats are occupied.
+
+function seatsInTheater(nCols, nRows, col, row) {
+  return (nCols-col+1)*(nRows-row)
+}
