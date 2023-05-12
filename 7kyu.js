@@ -249,3 +249,9 @@ console.log(minMax([5,233467,2,6,7]))
 
 // Other solution
 // const minMax = arr=> [Math.min(...arr), Math.max(...arr)];
+
+//     List Filtering
+//In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+const filter_list = arr => arr.filter(x => typeof x === 'number')
+
+// Other solution  const filter_list = l => l.filter(Number.isInteger);
