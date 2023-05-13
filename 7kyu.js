@@ -255,3 +255,10 @@ console.log(minMax([5,233467,2,6,7]))
 const filter_list = arr => arr.filter(x => typeof x === 'number')
 
 // Other solution  const filter_list = l => l.filter(Number.isInteger);
+
+// Isograms     
+// An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
+const isIsogram = (word) => new Set(word.toLowerCase()).size === word.length
+
+// Other solution  function isIsogram(str){ 
+//   return !/(\w).*\1/i.test(str)}
