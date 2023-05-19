@@ -280,3 +280,10 @@ const XO = (str) => {
 String.prototype.toJadenCase = function () {
     return this.split(' ').map((word) => word[0].toUpperCase() + word.substring(1)).join(" ");
   };
+
+//     Complementary DNA
+//In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". Your function receives one side of the DNA (string, except for Haskell); you need to return the other complementary side. DNA strand is never empty or there is no DNA at all (again, except for Haskell).
+const dna = str => str.split('').map(x=> x==="A"? "T": x==="T"? "A":x=="C"? "G":"C").join('');
+// Alternative solution
+//let pairs = {A:'T',T:'A',C:'G',G:'C'};
+//const DNAStrand = dna => dna.replace(/./g, c => pairs[c]);
