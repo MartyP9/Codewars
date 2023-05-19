@@ -287,3 +287,18 @@ const dna = str => str.split('').map(x=> x==="A"? "T": x==="T"? "A":x=="C"? "G":
 // Alternative solution
 //let pairs = {A:'T',T:'A',C:'G',G:'C'};
 //const DNAStrand = dna => dna.replace(/./g, c => pairs[c]);
+
+//    Credit Card Mask    
+//Your task is to write a function maskify, which changes all but the last four characters into '#'.
+function maskify(cc){
+    let num = cc.split('').slice(-4)
+    let hash = cc.split('').slice(0,-4).map(x=> x!=null ?'#':x)
+    return hash.concat(num).join('')
+  }
+  // Other solutions 
+  // function maskify(cc) {
+  //   return cc.split('').map((v,i,a) => a.length - i > 4 ? '#' : v).join('')
+  // }
+  //function maskify(cc) {
+  //   return cc.slice(0, -4).replace(/./g, '#') + cc.slice(-4);
+  // }
