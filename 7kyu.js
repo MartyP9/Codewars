@@ -306,3 +306,7 @@ function maskify(cc){
    //     Reverse words
  // Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
  const reverseWords = (str) => str.split(' ').map(x => x.split('').reverse().join('')).join(' ')
+
+ //    Remove anchor from URL
+//Complete the function/method so that it returns the url with anything after the anchor (#) removed.
+const removeUrlAnchor = url => url.split('#')[0]
