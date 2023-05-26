@@ -310,3 +310,7 @@ function maskify(cc){
  //    Remove anchor from URL
 //Complete the function/method so that it returns the url with anything after the anchor (#) removed.
 const removeUrlAnchor = url => url.split('#')[0]
+
+//   Find the Capitals
+//Write a function that takes a single string (word) as argument. The function must return an ordered list containing the indexes of all capital letters in the string
+const capitals = word => word.match(/[A-Z]/g).map(cap=>word.indexOf(cap))
