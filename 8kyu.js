@@ -175,3 +175,11 @@ const getRealFloor = n => n<=0 ? n: n>13? n-2: n-1;
 function seatsInTheater(nCols, nRows, col, row) {
   return (nCols-col+1)*(nRows-row)
 }
+
+//    Convert a Number to a String!
+// We need a function that can transform a number (integer) into a string.
+const numToString = (num) => num.toString()
+
+// Other solutions
+// const numberToString = num => `${num}`
+// const numberToString = num => String(num)
