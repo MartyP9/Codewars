@@ -314,3 +314,8 @@ const removeUrlAnchor = url => url.split('#')[0]
 //   Find the Capitals
 //Write a function that takes a single string (word) as argument. The function must return an ordered list containing the indexes of all capital letters in the string
 const capitals = word => word.match(/[A-Z]/g).map(cap=>word.indexOf(cap))
+
+//   String ends with?
+// Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
+
+const solution = (str,ending) => str.endsWith(ending)
