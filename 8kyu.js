@@ -187,3 +187,21 @@ const numToString = (num) => num.toString()
 //   Remove First and Last Character
 // It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
 const removeChar = str => str.slice(1,-1)
+
+//   Convert a String to a Number!
+// We need a function that can transform a string into a number. What ways of achieving this do you know?
+
+const stringToNumber = str => Number(str);
+//Other possible solution 
+// const stringToNumber = str => +str;
+
+// Create a function which answers the question "Are you playing banjo?".
+// If your name starts with the letter "R" or lower case "r", you are playing banjo!
+// The function takes a name as its only argument, and returns one of the following strings:
+// name + " plays banjo" 
+// name + " does not play banjo"
+
+const areYouPlayingBanjo = (name)=> {
+  if (name[0]==='r' || name[0]==='R') return name + " plays banjo"
+  else return name + " does not play banjo"
+}
