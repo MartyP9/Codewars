@@ -319,3 +319,8 @@ const capitals = word => word.match(/[A-Z]/g).map(cap=>word.indexOf(cap))
 // Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
 
 const solution = (str,ending) => str.endsWith(ending)
+
+//    Number of Decimal Digits
+// Determine the total number of digits in the integer (n>=0) given as input to the function. For example, 9 is a single digit, 66 has 2 digits and 128685 has 6 digits. Be careful to avoid overflows/underflows.
+
+const digits = n => n.toString().length
