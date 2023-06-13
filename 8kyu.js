@@ -213,3 +213,11 @@ const areYouPlayingBanjo = (name)=> {
 // Unfortunately, they have now left and the code they gave you doesn't work. Fix the helper function they wrote so that it works as intended (i.e. make the first character in the string "word" upper case).
 // Don't worry about numbers, special characters, or non-string types being passed to the function. The string lengths will be from 1 character up to 10 characters, but will never be empty.
 const capitalizeWord = word => word.charAt(0).toUpperCase() + word.slice(1);
+
+//   Dollars and Cents
+
+// The company you work for has just been awarded a contract to build a payment gateway. In order to help move things along, you have volunteered to create a function that will take a float and return the amount formatting in dollars and cents.
+// 39.99 becomes $39.99
+// The rest of your team will make sure that the argument is sanitized before being passed to your function although you will need to account for adding trailing zeros if they are missing (though you won't have to worry about a dangling period).
+
+const formatMoney = amount=> "$" + amount.toFixed(2)
