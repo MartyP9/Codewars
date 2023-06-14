@@ -221,3 +221,11 @@ const capitalizeWord = word => word.charAt(0).toUpperCase() + word.slice(1);
 // The rest of your team will make sure that the argument is sanitized before being passed to your function although you will need to account for adding trailing zeros if they are missing (though you won't have to worry about a dangling period).
 
 const formatMoney = amount=> "$" + amount.toFixed(2)
+
+//    Return Negative
+//In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+//The number can be negative already, in which case no change is required.
+//Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.
+function makeNegative(num) {
+  return -Math.abs(num);
+}
