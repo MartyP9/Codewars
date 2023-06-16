@@ -324,3 +324,10 @@ const solution = (str,ending) => str.endsWith(ending)
 // Determine the total number of digits in the integer (n>=0) given as input to the function. For example, 9 is a single digit, 66 has 2 digits and 128685 has 6 digits. Be careful to avoid overflows/underflows.
 
 const digits = n => n.toString().length
+
+//    Vowel Count 
+// Return the number (count) of vowels in the given string.
+// We will consider a, e, i, o, u as vowels for this Kata (but not y).
+// The input string will only consist of lower case letters and/or spaces.
+
+const getCount = str => str.match(/[aeiou]/gi)?str.match(/[aeiou]/gi).length:0
