@@ -331,3 +331,9 @@ const digits = n => n.toString().length
 // The input string will only consist of lower case letters and/or spaces.
 
 const getCount = str => str.match(/[aeiou]/gi)?str.match(/[aeiou]/gi).length:0
+
+//   Shortest Word
+// Simple, given a string of words, return the length of the shortest word(s).
+// String will never be empty and you do not need to account for different data types.
+
+const findShort = s =>s.split(' ').sort((a,b)=>a.length-b.length)[0].length
