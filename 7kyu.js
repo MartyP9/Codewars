@@ -337,3 +337,15 @@ const getCount = str => str.match(/[aeiou]/gi)?str.match(/[aeiou]/gi).length:0
 // String will never be empty and you do not need to account for different data types.
 
 const findShort = s =>s.split(' ').sort((a,b)=>a.length-b.length)[0].length
+
+//    Two to one
+//Take 2 strings s1 and s2 including only letters from a to z. Return a new sorted string, the longest possible, containing distinct letters - each taken only once - coming from s1 or s2.
+function longest(s1, s2) {
+    let seen = {};
+    let c = (s1+s2).split('').sort()
+    let d = c.filter(function(item) {
+        return seen.hasOwnProperty(item) ? false : (seen[item] = true);
+    });
+    return d.join('')
+}
+// Other solutions const longest = (s1, s2) => [...new Set(s1+s2)].sort().join('')
