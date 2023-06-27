@@ -349,3 +349,10 @@ function longest(s1, s2) {
     return d.join('')
 }
 // Other solutions const longest = (s1, s2) => [...new Set(s1+s2)].sort().join('')
+
+//     Is this a triangle?
+// Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
+
+const isTriangle = (a,b,c) =>{
+    return a+b>c && b+c>a && a+c>b
+}
