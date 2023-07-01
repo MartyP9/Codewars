@@ -249,3 +249,12 @@ const century = year => Math.ceil(year/100)
 // You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
 
 const water = (time) => Math.floor(time*.5)
+
+//    Abbreviate a Two Word Name
+
+// Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+// The output should be two capital letters with a dot separating them.
+
+const abbrevName = name => name.split(' ').map(i => i[0].toUpperCase()).join('.')
+
+// Other solution const abbrevName = name => name.match(/\b\w/g).join('.').toUpperCase()
