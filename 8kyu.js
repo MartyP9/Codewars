@@ -258,3 +258,8 @@ const water = (time) => Math.floor(time*.5)
 const abbrevName = name => name.split(' ').map(i => i[0].toUpperCase()).join('.')
 
 // Other solution const abbrevName = name => name.match(/\b\w/g).join('.').toUpperCase()
+
+//    Boolean to String
+// Implement a function which convert the given boolean value into its string representation.
+// Note: Only valid inputs will be given.
+const booleanToString = b => b.toString()
