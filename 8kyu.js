@@ -281,3 +281,10 @@ function fakeBin(x){
 // function fakeBin(x) {
 //   return x.split('').map(n => n < 5 ? 0 : 1).join('');
 // }
+
+//    Returning Strings
+// Make a function that will return a greeting statement that uses an input; your program should return, "Hello, <name> how are you doing today?".
+
+function greet(name){
+  return `Hello, ${name} how are you doing today?`
+}
