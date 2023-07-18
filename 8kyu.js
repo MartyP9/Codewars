@@ -300,3 +300,14 @@ const stringToArray = string => string.split(' ')
 // Array can contain numbers or strings. X can be either. Return true if the array contains the value, false if not.
 
 const check = (a,x)=>a.includes(x)
+
+//     Total amount of points
+// Our team's match results are recorded in a collection of strings. Each match is represented by a string in the format "x:y", where x is our team's score and y is our opponents score.
+// Points are awarded for each match as follows: if x > y: 3 points (win), if x < y: 0 points (loss), if x = y: 1 point (tie)
+// We need to write a function that takes this collection and returns the number of points our team (x) got in the championship by the rules given above.
+function points(games) {
+  let score = 0
+  games.map(game => game[0]>game[2]?score +=3: game[0]===game[2]? score +=1: score+=0)
+  return score
+}
+// const points=g=>g.reduce((a,c)=>a+(c[0]>c[2]?3:c[0]<c[2]?0:1),0)
