@@ -311,3 +311,9 @@ function points(games) {
   return score
 }
 // const points=g=>g.reduce((a,c)=>a+(c[0]>c[2]?3:c[0]<c[2]?0:1),0)
+
+//     Sum mixed array
+// Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+// Return your answer as a number.
+
+const sumMix=x=>x.reduce((a,b)=>+b+a,0)
