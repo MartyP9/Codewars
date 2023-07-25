@@ -317,3 +317,8 @@ function points(games) {
 // Return your answer as a number.
 
 const sumMix=x=>x.reduce((a,b)=>+b+a,0)
+
+//    Remove exclamation marks
+// Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+
+const removeExclamationMarks = s =>s.split('').map(x=> x!== '!'?x:'').join('')
