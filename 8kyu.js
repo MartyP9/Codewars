@@ -322,3 +322,10 @@ const sumMix=x=>x.reduce((a,b)=>+b+a,0)
 // Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
 
 const removeExclamationMarks = s =>s.split('').map(x=> x!== '!'?x:'').join('')
+
+//    MakeUpperCase
+// Write a function which converts the input string to uppercase.
+
+function makeUpperCase(str) {
+  return str.toUpperCase()
+}
