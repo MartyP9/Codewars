@@ -322,6 +322,7 @@ const sumMix=x=>x.reduce((a,b)=>+b+a,0)
 // Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
 
 const removeExclamationMarks = s =>s.split('').map(x=> x!== '!'?x:'').join('')
+// Other solutions const removeExclamationMarks = s =>s.replace(/!/gi, '');
 
 //    MakeUpperCase
 // Write a function which converts the input string to uppercase.
@@ -329,3 +330,9 @@ const removeExclamationMarks = s =>s.split('').map(x=> x!== '!'?x:'').join('')
 function makeUpperCase(str) {
   return str.toUpperCase()
 }
+
+//    Welcome to the City
+// Create a method sayHello/say_hello/SayHello that takes as input a name, city, and state to welcome a person. Note that name will be an array consisting of one or more values that should be joined together with one space between each, and the length of the name array in test cases will vary.
+function sayHello( name, city, state ) {
+  return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+  }
