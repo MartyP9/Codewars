@@ -336,3 +336,7 @@ function makeUpperCase(str) {
 function sayHello( name, city, state ) {
   return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
   }
+
+  //     Remove Duplicate Words
+  // Your task is to remove all duplicate words from a string, leaving only single (first) words entries.
+  const removeDuplicateWords = s => [... new Set(s.split(' '))].join(' ')
