@@ -356,3 +356,16 @@ function longest(s1, s2) {
 const isTriangle = (a,b,c) =>{
     return a+b>c && b+c>a && a+c>b
 }
+
+//    Bumps in the Road
+// Your car is old, it breaks easily. The shock absorbers are gone and you think it can handle about 15 more bumps before it dies totally.
+// Unfortunately for you, your drive is very bumpy! Given a string showing either flat road (_) or bumps (n). If you are able to reach home safely by encountering 15 bumps or less, return Woohoo!, otherwise return Car Dead
+
+function bump(x){
+    let count =''
+    for (let n of x){
+      n ==='n'? count++:null;
+    }
+    return +count <= 15? 'Woohoo!': 'Car Dead'
+  }
+  // Other solution const bump=x=>x.split('n').length>16?"Car Dead":"Woohoo!"
