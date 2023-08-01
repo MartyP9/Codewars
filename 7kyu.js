@@ -369,3 +369,10 @@ function bump(x){
     return +count <= 15? 'Woohoo!': 'Car Dead'
   }
   // Other solution const bump=x=>x.split('n').length>16?"Car Dead":"Woohoo!"
+
+  //     Find min and max
+// Implement a function that returns the minimal and the maximal value of a list (in this order).
+function getMinMax(arr){
+    let order = arr.sort((a,b)=>a-b)
+    return [order[0],order[order.length -1]]
+  };
