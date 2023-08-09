@@ -337,9 +337,9 @@ function sayHello( name, city, state ) {
   return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
   }
 
-  //     Remove Duplicate Words
-  // Your task is to remove all duplicate words from a string, leaving only single (first) words entries.
-  const removeDuplicateWords = s => [... new Set(s.split(' '))].join(' ')
+//     Remove Duplicate Words
+// Your task is to remove all duplicate words from a string, leaving only single (first) words entries.
+const removeDuplicateWords = s => [... new Set(s.split(' '))].join(' ')
 
 //     Remove First and Last Character Part Two
 // You are given a string containing a sequence of character sequences separated by commas.
@@ -347,3 +347,7 @@ function sayHello( name, city, state ) {
 // If the input string is empty or the removal of the first and last items would cause the resulting string to be empty, return an empty value (represented as a generic value NULL in the examples below).
 
   const array = arr => arr.split(`,`).slice(1, -1).join(` `) || null;
+
+//    Sentence Smash
+// Write a function that takes an array of words and smashes them together into a sentence and returns the sentence. You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. Be careful, there shouldn't be a space at the beginning or the end of the sentence!
+const smash = x => x.join(' ')
