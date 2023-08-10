@@ -351,3 +351,9 @@ const removeDuplicateWords = s => [... new Set(s.split(' '))].join(' ')
 //    Sentence Smash
 // Write a function that takes an array of words and smashes them together into a sentence and returns the sentence. You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. Be careful, there shouldn't be a space at the beginning or the end of the sentence!
 const smash = x => x.join(' ')
+
+//    Do I get a bonus?
+// Build a function that takes in two arguments (salary, bonus). Salary will be an integer, and bonus a boolean.
+// If bonus is true, the salary should be multiplied by 10. If bonus is false, the fatcat did not make enough money and must receive only his stated salary.
+// Return the total figure the individual will receive as a string prefixed with "£" (= "\u00A3")
+const bonusTime = (salary,bonus) => bonus?`\u00A3`+salary*10:`\u00A3`+salary
