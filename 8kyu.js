@@ -357,3 +357,7 @@ const smash = x => x.join(' ')
 // If bonus is true, the salary should be multiplied by 10. If bonus is false, the fatcat did not make enough money and must receive only his stated salary.
 // Return the total figure the individual will receive as a string prefixed with "£" (= "\u00A3")
 const bonusTime = (salary,bonus) => bonus?`\u00A3`+salary*10:`\u00A3`+salary
+
+//    Name Shuffler
+// Write a function that returns a string in which firstname is swapped with last name.
+const nameShuffler =str=> str.split(' ').reverse().join(' ')
