@@ -361,3 +361,9 @@ const bonusTime = (salary,bonus) => bonus?`\u00A3`+salary*10:`\u00A3`+salary
 //    Name Shuffler
 // Write a function that returns a string in which firstname is swapped with last name.
 const nameShuffler =str=> str.split(' ').reverse().join(' ')
+
+//    Reversing words in a string
+//You need to write a function that reverses the words in a given string. A word can also fit an empty string. If this is not clear enough, here are some examples:
+
+// As the input may have trailing spaces, you will also need to ignore unneccesary whitespace.
+const reverse= string=> string.split(' ').reverse().join(' ')
