@@ -370,9 +370,13 @@ function bump(x){
   }
   // Other solution const bump=x=>x.split('n').length>16?"Car Dead":"Woohoo!"
 
-  //     Find min and max
+//     Find min and max
 // Implement a function that returns the minimal and the maximal value of a list (in this order).
 function getMinMax(arr){
     let order = arr.sort((a,b)=>a-b)
     return [order[0],order[order.length -1]]
   };
+
+//     Anagram Detection
+// Complete the function to return true if the two arguments given are anagrams of each other; return false otherwise.
+const isAnagram = (test, original) => test.toLowerCase().split('').sort().join('')===original.toLowerCase().split('').sort().join('')
