@@ -384,3 +384,42 @@ const isAnagram = (test, original) => test.toLowerCase().split('').sort().join('
 //    Greet Me
 // Write a method that takes one argument as name and then greets that name, capitalized and ends with an exclamation point.
 const greet = (name) => `Hello ${name[0].toUpperCase() + name.slice(1).toLowerCase()}!`
+
+//    Alphabet war
+// Write a function that accepts fight string consists of only small letters and return who wins the fight. When the left side wins return Left side wins!, when the right side wins return Right side wins!, in other case return Let's fight again!.
+//The other letters don't have power and are only victims.
+const alphabetWar = (fight) => {
+    let l =''
+    let r = ''
+    fight.split('').map(x=> {switch(x){
+        case 'w': l += 4;
+        break;
+        case 'p': l +=3;
+        break;
+        case 'b': l +=2;
+        break;
+        case 's': l +=1
+        break;}
+    })
+       let scoreL = l.split('').reduce((a,b)=>+a + +b,0)
+
+       fight.split('').map(x=> {switch(x){
+           case 'm': r += 4;
+           break;
+           case 'q': r +=3;
+           break;
+           case 'd': r +=2;
+           break;
+           case 'z': r +=1
+           break;}
+       })
+          let scoreR = r.split('').reduce((a,b)=>+a + +b,0)
+          
+          return scoreR>scoreL?'Right side wins!':scoreL>scoreR? 'Left side wins!':'Let\'s fight again!'    
+}
+
+// Other solution function alphabetWar(fight) {
+//     let map = { w: -4, p: -3, b: -2, s: -1, m: 4, q: 3, d: 2, z: 1 };
+//     let result = fight.split('').reduce((a, b) => a + (map[b] || 0), 0);
+//     return result ? (result < 0 ? "Left" : "Right") + " side wins!" : "Let's fight again!";
+// }
