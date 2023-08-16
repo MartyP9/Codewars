@@ -380,3 +380,7 @@ function getMinMax(arr){
 //     Anagram Detection
 // Complete the function to return true if the two arguments given are anagrams of each other; return false otherwise.
 const isAnagram = (test, original) => test.toLowerCase().split('').sort().join('')===original.toLowerCase().split('').sort().join('')
+
+//    Greet Me
+// Write a method that takes one argument as name and then greets that name, capitalized and ends with an exclamation point.
+const greet = (name) => `Hello ${name[0].toUpperCase() + name.slice(1).toLowerCase()}!`
