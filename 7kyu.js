@@ -423,3 +423,8 @@ const alphabetWar = (fight) => {
 //     let result = fight.split('').reduce((a, b) => a + (map[b] || 0), 0);
 //     return result ? (result < 0 ? "Left" : "Right") + " side wins!" : "Let's fight again!";
 // }
+
+//    Convert an array of strings to array of numbers
+// Create the function that takes as a parameter a sequence of numbers represented as strings and outputs a sequence of numbers.
+const toNumberArray = stringarray => stringarray.map(x=> +x)
+// Other Solution function toNumberArray(s){ return s.map(x => parseFloat(x)); }
