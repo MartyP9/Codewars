@@ -428,3 +428,7 @@ const alphabetWar = (fight) => {
 // Create the function that takes as a parameter a sequence of numbers represented as strings and outputs a sequence of numbers.
 const toNumberArray = stringarray => stringarray.map(x=> +x)
 // Other Solution function toNumberArray(s){ return s.map(x => parseFloat(x)); }
+
+//   Sort the Gift Code
+// Write a function that accepts a string containing up to 26 unique alphabetical characters, and returns a string containing the same characters in alphabetical order.
+const sortGiftCode = code => code.split('').sort().join('')
