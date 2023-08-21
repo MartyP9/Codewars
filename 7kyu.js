@@ -432,3 +432,7 @@ const toNumberArray = stringarray => stringarray.map(x=> +x)
 //   Sort the Gift Code
 // Write a function that accepts a string containing up to 26 unique alphabetical characters, and returns a string containing the same characters in alphabetical order.
 const sortGiftCode = code => code.split('').sort().join('')
+
+//    All unique
+// Write a program to determine if a string contains only unique characters. Return true if it does and false otherwise.
+const hasUniqueChars = (str) => new Set(str).size === str.length;
