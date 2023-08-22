@@ -436,3 +436,7 @@ const sortGiftCode = code => code.split('').sort().join('')
 //    All unique
 // Write a program to determine if a string contains only unique characters. Return true if it does and false otherwise.
 const hasUniqueChars = (str) => new Set(str).size === str.length;
+
+//     Filter the number
+// You will be given a string of numbers and letters mixed up, you have to return all the numbers in that string in the order they occur.
+const filterString =value => value.replace(/\D/g,'')
