@@ -439,4 +439,12 @@ const hasUniqueChars = (str) => new Set(str).size === str.length;
 
 //     Filter the number
 // You will be given a string of numbers and letters mixed up, you have to return all the numbers in that string in the order they occur.
-const filterString =value => value.replace(/\D/g,'')
+const filterString =value => +value.replace(/\D/g,'')
+
+//    Odd-Even String Sort
+// Given a string s. You have to return another string such that even-indexed and odd-indexed characters of s are grouped and groups are space-separated
+const sortMyString = S => {
+    let str1 = S.split('').filter((x,i)=> i%2 === 0?x:'').join('')
+    let str2 =S.split('').filter((x,i)=> i%2 !== 0?x:'').join('')
+    return `${str1} ${str2}`
+}
