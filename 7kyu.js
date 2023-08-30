@@ -448,3 +448,7 @@ const sortMyString = S => {
     let str2 =S.split('').filter((x,i)=> i%2 !== 0?x:'').join('')
     return `${str1} ${str2}`
 }
+
+//     Spacify
+// Modify the spacify function so that it returns the given string with spaces inserted between each character.
+const spacify = str => str.split('').join(' ')
