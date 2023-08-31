@@ -452,3 +452,14 @@ const sortMyString = S => {
 //     Spacify
 // Modify the spacify function so that it returns the given string with spaces inserted between each character.
 const spacify = str => str.split('').join(' ')
+
+//     Divide and Conquer
+// Given a mixed array of number and string representations of integers, add up the non-string integers and subtract the total of the string integers. Return as a number.
+const divCon = arr => {
+    let num = x => {if(typeof(x)==='number') return num}
+    let str = x => {if(typeof(x)==='string') return str}
+    let sum1 = arr.filter(num).reduce((a,b)=>a+b, 0)
+    let sum2 = arr.filter(str).reduce((a,b)=>a + +b, 0)
+    return sum1 -sum2
+}
+// const divCon = x => return x.reduce((acc, cur) => typeof cur === 'number'? acc + cur : acc - Number(cur),0)
