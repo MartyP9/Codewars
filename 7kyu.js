@@ -463,3 +463,24 @@ const divCon = arr => {
     return sum1 -sum2
 }
 // const divCon = x => return x.reduce((acc, cur) => typeof cur === 'number'? acc + cur : acc - Number(cur),0)
+
+//     Digits explosion
+// Given a string made of digits [0-9], return a string where each digit is repeated a number of times equals to its value.
+const explode = s => {
+    let result = '';
+    for (let i = 0; i < s.length; i++) {
+      const digit = s[i];
+      const count = parseInt(digit);
+  
+      if (!isNaN(count)) {
+        result += digit.repeat(count);
+      } else {
+        result += digit;
+      }
+    }
+    return result;
+  }
+
+  //Other solutions const explode = s => s.split("").map((e) => e.repeat(+e)).join("");
+  // const explode = s => s.replace(/\d/g, d => d.repeat(d));
+  // explode=s=>[...s].map(n=>n.repeat(n)).join``
