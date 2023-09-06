@@ -484,3 +484,11 @@ const explode = s => {
   //Other solutions const explode = s => s.split("").map((e) => e.repeat(+e)).join("");
   // const explode = s => s.replace(/\d/g, d => d.repeat(d));
   // explode=s=>[...s].map(n=>n.repeat(n)).join``
+
+  //   Short Long Short
+  // Given 2 strings, a and b, return a string of the form short+long+short, with the shorter string on the outside and the longer string on the inside. The strings will not be the same length, but they may be empty ( zero length ).
+  const solution1 = (a,b) => {
+    let sorted = [a,b].sort((c,d)=>c.length-d.length)
+    return sorted.concat(sorted[0]).join('')
+}
+//  const solution = (a, b) => a.length > b.length ? b+a+b : a+b+a;
