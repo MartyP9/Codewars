@@ -496,3 +496,13 @@ const explode = s => {
 //    Most digits
 // Find the number with the most digits. If two numbers in the argument array have the same number of digits, return the first one in the array.
 const findLongest = arr => arr.reduce((a, b) => (`${b}`.length > `${a}`.length) ? b : a);
+
+//     Switcheroo
+// Given a string made up of letters a, b, and/or c, switch the position of letters a and b (change a to b and vice versa). Leave any incidence of c untouched.
+
+const switcheroo = x => {
+  return x.replace(/[ab]/g, function(match) {
+    return match === "a" ? "b" : "a";
+  });
+}
+// Otehr solution const switcheroo=x=>x.replace(/[ab]/g,x=>x=="a"?"b":"a")
