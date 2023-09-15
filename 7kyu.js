@@ -506,3 +506,11 @@ const switcheroo = x => {
   });
 }
 // Otehr solution const switcheroo=x=>x.replace(/[ab]/g,x=>x=="a"?"b":"a")
+
+//    Mumbling
+// The examples below show you how to write function accum:
+// accum("abcd") -> "A-Bb-Ccc-Dddd"
+
+function accum(s) {
+	return s.split('').map((x, i) => (x.toUpperCase() + x.toLowerCase().repeat(i))).join('-');
+}
