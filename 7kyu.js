@@ -514,3 +514,19 @@ const switcheroo = x => {
 function accum(s) {
 	return s.split('').map((x, i) => (x.toUpperCase() + x.toLowerCase().repeat(i))).join('-');
 }
+
+// Coding Meetup #1 - Higher-Order Functions Series
+// You will be given an array of objects (hashes in ruby) representing data about developers who have signed up to attend the coding meetup that you are organising for the first time.
+// Your task is to return the number of JavaScript developers coming from Europe.
+
+const countDevelopers = (list) => {
+  let count = 0
+  for (let i = 0; i < list.length; i++) {
+    if (list[i].continent === 'Europe' && list[i].language === 'JavaScript') {
+      count++
+    }
+  }
+  return count
+}
+// Other Solution
+// const countDevelopers =(list) => list.filter(x=>x.continent=='Europe'&&x.language=='JavaScript').length
