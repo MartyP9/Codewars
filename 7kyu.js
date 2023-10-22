@@ -535,3 +535,14 @@ const countDevelopers = (list) => {
 // Make a program that filters a list of strings and returns a list with only your friends name in it.
 // If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
 const friend = (friends) => friends.filter(x=>x.length === 4)
+
+
+// Basic Mathematical Operations
+// Your task is to create a function that does four basic mathematical operations.
+// The function should take three arguments - operation(string/char), value1(number), value2(number).
+// The function should return result of numbers after applying the chosen operation.
+
+function basicOp(o, a, b) {
+  return eval(a+o+b);
+}
+// Can also use a switch case on the operation value
