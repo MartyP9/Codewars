@@ -452,13 +452,17 @@ class SmallestIntegerFinder {
   }
 }
 
-// Better Solution - O(1)
+//    Better Solution - O(1)
 //class SmallestIntegerFinder {
 //   findSmallestInt(args) {
 //     return Math.min(...args)
 //   }
 // }
 
-// Is n divisible by x and y?
+//    Is n divisible by x and y?
 // Create a function that checks if a number n is divisible by two numbers x AND y. All inputs are positive, non-zero numbers.
 const isDivisible = (n,x,y)=> n%x===0 && n%y===0
+
+//    Get the Mean of an array
+// Return the average of the given array rounded down to its nearest integer.
+const getAverage = (marks)=> Math.floor(marks.reduce((a,c)=>a+c,0) / marks.length)
