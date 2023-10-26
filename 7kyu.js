@@ -552,3 +552,9 @@ function basicOp(o, a, b) {
 // To be a senior, a member must be at least 55 years old and have a handicap greater than 7. In this croquet club, handicaps range from -2 to +26; the better the player the lower the handicap.
 
 const openOrSenior = (data)=> data.map(e=> e[0]>=55 && e[1]>7?'Senior':'Open')
+
+//    Sum of array Singles
+// You will be given an array of numbers in which two numbers occur once and the rest occur only twice. Your task will be to return the sum of the numbers that occur only once.
+// For example, repeats([4,5,7,5,4,8]) = 15 because only the numbers 7 and 8 occur once, and their sum is 15. Every other number occurs twice.
+
+const repeats = (arr)=> arr.filter(n => arr.indexOf(n)=== arr.lastIndexOf(n)).reduce((a,c)=> a+c , 0)
