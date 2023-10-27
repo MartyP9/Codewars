@@ -558,3 +558,9 @@ const openOrSenior = (data)=> data.map(e=> e[0]>=55 && e[1]>7?'Senior':'Open')
 // For example, repeats([4,5,7,5,4,8]) = 15 because only the numbers 7 and 8 occur once, and their sum is 15. Every other number occurs twice.
 
 const repeats = (arr)=> arr.filter(n => arr.indexOf(n)=== arr.lastIndexOf(n)).reduce((a,c)=> a+c , 0)
+
+//   Number of People on the bus
+// You are provided with a list (or array) of integer pairs. Elements of each pair represent the number of people that get on the bus (the first item) and the number of people that get off the bus (the second item) at a bus stop.
+// Your task is to return the number of people who are still on the bus after the last bus stop (after the last array). Even though it is the last bus stop, the bus might not be empty and some people might still be inside the bus.
+
+const numberBus = (busStops) => busStops.map(n=> n[0]-n[1]).reduce((a,c)=>a + c, 0)
