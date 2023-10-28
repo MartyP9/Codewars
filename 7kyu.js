@@ -564,3 +564,10 @@ const repeats = (arr)=> arr.filter(n => arr.indexOf(n)=== arr.lastIndexOf(n)).re
 // Your task is to return the number of people who are still on the bus after the last bus stop (after the last array). Even though it is the last bus stop, the bus might not be empty and some people might still be inside the bus.
 
 const numberBus = (busStops) => busStops.map(n=> n[0]-n[1]).reduce((a,c)=>a + c, 0)
+
+//    Mumbling
+// The parameter of accum is a string which includes only letters from a..z and A..Z.
+// accum("cwAt") -> "C-Ww-Aaa-Tttt"
+function accum(s) {
+	return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
+}
