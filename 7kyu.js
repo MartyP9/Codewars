@@ -571,3 +571,14 @@ const numberBus = (busStops) => busStops.map(n=> n[0]-n[1]).reduce((a,c)=>a + c,
 function accum(s) {
 	return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
 }
+
+//   Number-Star Ladder
+// Using n as a parameter in the function pattern, where n>0, complete the codes to get the pattern (take the help of examples):  pattern(3) should return "1\n1*2\n1**3"
+const pattern = n => {
+  if (n < 1) return "";
+  let output = "1";
+  for (let i = 2; i <= n; ++i) {
+    output += "\n1" + Array(i).join("*") + i;
+  }
+  return output;
+}
