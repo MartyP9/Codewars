@@ -466,3 +466,7 @@ const isDivisible = (n,x,y)=> n%x===0 && n%y===0
 //    Get the Mean of an array
 // Return the average of the given array rounded down to its nearest integer.
 const getAverage = (marks)=> Math.floor(marks.reduce((a,c)=>a+c,0) / marks.length)
+
+//   Merge Arrays
+// Write a function that merges two sorted arrays into a single one. The arrays only contain integers. Also, the final outcome must be sorted and not have any duplicate.
+const mergeArrays = (a, b) => [...new Set(a.concat(b))].sort((a,b)=>a-b);
