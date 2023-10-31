@@ -582,3 +582,16 @@ const pattern = n => {
   }
   return output;
 }
+
+//   Find The Duplicated Number in a Consecutive Unsorted List
+// You are given an array of n+1 integers 1 through n. In addition there is a single duplicate integer. The array is unsorted. You should return the duplicate value as a single integer.
+
+const findDup = arr => {
+  for (let i =0;i<arr.length;i++){
+      if (arr.indexOf(i) !== arr.lastIndexOf(i)){
+          return i
+      }
+  }
+}
+// const findDup = a => a.find(x=>a.indexOf(x)!=a.lastIndexOf(x));
+// const findDup = arr => arr.filter((v, i) => arr.indexOf(v) != i)[0];
