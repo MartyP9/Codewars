@@ -595,3 +595,10 @@ const findDup = arr => {
 }
 // const findDup = a => a.find(x=>a.indexOf(x)!=a.lastIndexOf(x));
 // const findDup = arr => arr.filter((v, i) => arr.indexOf(v) != i)[0];
+
+//   See you next Happy Year
+// Return the next year with unique digits
+const nextHappyYear = year => {
+  while(new Set([...++year+'']).size<4);
+  return year;
+}
