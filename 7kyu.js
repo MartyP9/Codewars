@@ -602,3 +602,8 @@ const nextHappyYear = year => {
   while(new Set([...++year+'']).size<4);
   return year;
 }
+
+//    Leap Years
+// In this kata you should simply determine, whether a given year is a leap year or not. 
+const isLeapYear = year => (year % 100 !== 0 && year % 4 === 0) || year % 400 === 0;
+
