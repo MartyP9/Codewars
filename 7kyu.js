@@ -607,3 +607,16 @@ const nextHappyYear = year => {
 // In this kata you should simply determine, whether a given year is a leap year or not. 
 const isLeapYear = year => (year % 100 !== 0 && year % 4 === 0) || year % 400 === 0;
 
+//    Elevator Distance  7
+// Given an array representing a series of floors you must reach by elevator, return an integer representing the total distance travelled for visiting each floor in the array in order.
+
+const elevatorDistance = arr => {
+  let curr = 0
+  for (let i=0; i<arr.length -1; i++){
+      curr += Math.abs(arr[i] - arr[i+1])
+  }
+  return curr
+}
+// Other solution with reduce
+// const elevatorDistance = arr => arr.reduce((acc,x,i)=>acc += Math.abs(x-arr[i-1] ||0),0)
+
