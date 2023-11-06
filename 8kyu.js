@@ -470,3 +470,10 @@ const getAverage = (marks)=> Math.floor(marks.reduce((a,c)=>a+c,0) / marks.lengt
 //   Merge Arrays
 // Write a function that merges two sorted arrays into a single one. The arrays only contain integers. Also, the final outcome must be sorted and not have any duplicate.
 const mergeArrays = (a, b) => [...new Set(a.concat(b))].sort((a,b)=>a-b);
+
+
+//    To square(root) or not to square(root)   
+// Write a method, that will get an integer array as parameter and will process every number from this array. Return a new array with processing every number of the input-array.
+// If the number has an integer square root, take this, otherwise square the number.
+
+const squareOrSquareRoot = array => array.map(n => Math.sqrt(n)%1===0 ? Math.sqrt(n): n*n)

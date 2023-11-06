@@ -607,7 +607,7 @@ const nextHappyYear = year => {
 // In this kata you should simply determine, whether a given year is a leap year or not. 
 const isLeapYear = year => (year % 100 !== 0 && year % 4 === 0) || year % 400 === 0;
 
-//    Elevator Distance  7
+//    Elevator Distance
 // Given an array representing a series of floors you must reach by elevator, return an integer representing the total distance travelled for visiting each floor in the array in order.
 
 const elevatorDistance = arr => {
@@ -620,7 +620,7 @@ const elevatorDistance = arr => {
 // Other solution with reduce
 // const elevatorDistance = arr => arr.reduce((acc,x,i)=>acc += Math.abs(x-arr[i-1] ||0),0)
 
-//    Sort by Last Char     7
+//    Sort by Last Char
 // Given a string of words (x), you need to return an array of the words, sorted alphabetically by the final character in each.
 // If two words have the same last letter, they returned array should show them in the order they appeared in the given string.All inputs will be valid.
 
