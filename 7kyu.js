@@ -628,3 +628,16 @@ const last = s => s.split(' ').sort((a,b)=> a.charCodeAt(a.length -1) - b.charCo
 
 // Other Solution
 // const last = ( $ ) => $.split(' ').sort((a,b)=> a.slice(-1) > b.slice(-1))
+
+//     Multiplication - Generators #2
+// Your generator must take one parameter `a` then everytime the generator is called you must return a string in the format of: `'a x b = c'` where c is the answer. Also, the value of `b`, which starts at 1, must increment by 1 each time!
+function* generator(a, b=1) {
+  while(true) yield `${a} x ${b} = ${a*b++}`;
+}
+
+//  Other Solution
+//function* generator(a) {
+  // for(let b = 1; ; b++){
+  //     yield `${a} x ${b} = ${a*b}`
+  //   }
+  // }
