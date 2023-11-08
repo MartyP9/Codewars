@@ -641,3 +641,11 @@ function* generator(a, b=1) {
   //     yield `${a} x ${b} = ${a*b}`
   //   }
   // }
+
+  
+  //    Simple Fun #40: Timed Reading
+ //Timed Reading is an educational tool used in many schools to improve and advance reading skills. A young elementary student has just finished his very first timed reading exercise. Unfortunately he's not a very good reader yet, so whenever he encountered a word longer than maxLength, he simply skipped it and read on.
+
+// Help the teacher figure out how many words the boy has read by calculating the number of words in the text he has read, no longer than maxLength.
+
+const  timedReading = (maxLength, text) => text.replace(/\p{P}/gu,"").split(' ').filter(e => e.length && e.length <= maxLength).length
