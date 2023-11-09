@@ -649,3 +649,8 @@ function* generator(a, b=1) {
 // Help the teacher figure out how many words the boy has read by calculating the number of words in the text he has read, no longer than maxLength.
 
 const  timedReading = (maxLength, text) => text.replace(/\p{P}/gu,"").split(' ').filter(e => e.length && e.length <= maxLength).length
+
+//     Only One
+// Given any number of boolean flags function should return true if and only if one of them is true while others are false. If function is called without arguments it should return false.
+const onlyOne = (...args) => args.filter(Boolean).length === 1
+// const onlyOne = (...args) => args.filter(e=>e).length === 1
