@@ -654,3 +654,11 @@ const  timedReading = (maxLength, text) => text.replace(/\p{P}/gu,"").split(' ')
 // Given any number of boolean flags function should return true if and only if one of them is true while others are false. If function is called without arguments it should return false.
 const onlyOne = (...args) => args.filter(Boolean).length === 1
 // const onlyOne = (...args) => args.filter(e=>e).length === 1
+
+//     Simple Fun#69: Are Equally Strong?
+// Call two arms equally strong if the heaviest weights they each are able to lift are equal.
+// Call two people equally strong if their strongest arms are equally strong (the strongest arm can be both the right and the left), and so are their weakest arms.
+// Given your and your friend's arms' lifting capabilities find out if you two are equally strong.
+
+const  areEquallyStrong = (yourLeft, yourRight, friendsLeft, friendsRight) => (yourLeft==friendsLeft && yourRight==friendsRight) || (yourLeft==friendsRight && yourRight==friendsLeft)
+// Other Solution const areEquallyStrong = (a1, a2, b1, b2) =>a1+a2 == b1+b2 && a1*a2 == b1*b2;
