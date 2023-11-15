@@ -482,3 +482,17 @@ const squareOrSquareRoot = array => array.map(n => Math.sqrt(n)%1===0 ? Math.sqr
 //     Is he gonna survive?
 // A hero is on his way to the castle to complete his mission. However, he's been told that the castle is surrounded with a couple of powerful dragons! each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. Assuming he's gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive?
 const hero = (bullets, dragons) => bullets>= dragons*2
+
+//    Neutralisation
+// Given two strings comprised of + and -, return a new string which shows how the two strings interact in the following way:
+// When positives and positives interact, they remain positive.
+// When negatives and negatives interact, they remain negative.
+// But when negatives and positives interact, they become neutral, and are shown as the number 0.
+function neutralise(s1, s2) {
+  let res = "";
+  for(let i = 0; i < s1.length; i++) {
+    res += s1[i] !== s2[i]? "0": s1[i];
+  }
+  return res;
+}
+// const neutralise = (a, b) => a.split('').map((el,i) => el === b[i] ? el : 0).join('')
