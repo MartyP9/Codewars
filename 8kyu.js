@@ -496,3 +496,35 @@ function neutralise(s1, s2) {
   return res;
 }
 // const neutralise = (a, b) => a.split('').map((el,i) => el === b[i] ? el : 0).join('')
+
+//     Get Planet by Id Name
+// The function is not returning the correct values. Can you figure out why?
+function getPlanetName(id){
+  let name;
+  switch(id){
+    case 1:
+      name = 'Mercury'
+      break
+    case 2:
+      name = 'Venus'
+      break
+    case 3:
+      name = 'Earth'
+      break
+    case 4:
+      name = 'Mars'
+      break
+    case 5:
+      name = 'Jupiter'
+      break
+    case 6:
+      name = 'Saturn'
+      break
+    case 7:
+      name = 'Uranus'
+      break
+    case 8:
+      name = 'Neptune'
+      break
+  }return name;
+}
