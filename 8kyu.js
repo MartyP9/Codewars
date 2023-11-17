@@ -528,3 +528,11 @@ function getPlanetName(id){
       break
   }return name;
 }
+
+//     Calculate Price Excluding VAT
+// Write a function that calculates the original product price, without VAT.
+ // VAT is always 15% for the purposes of this Kata.
+// Round the result to 2 decimal places.
+// If null value given then return -1
+
+const excludingVatPrice = price => price == null? -1 : +(price/1.15).toFixed(2)
