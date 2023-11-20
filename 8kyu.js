@@ -536,3 +536,8 @@ function getPlanetName(id){
 // If null value given then return -1
 
 const excludingVatPrice = price => price == null? -1 : +(price/1.15).toFixed(2)
+
+//    Is it a number?
+// Given a string s, write a method (function) that will return true if its a valid single integer or floating number or false if its not.
+
+const isDigit = s => s == parseFloat(s)
