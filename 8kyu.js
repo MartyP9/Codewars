@@ -541,3 +541,9 @@ const excludingVatPrice = price => price == null? -1 : +(price/1.15).toFixed(2)
 // Given a string s, write a method (function) that will return true if its a valid single integer or floating number or false if its not.
 
 const isDigit = s => s == parseFloat(s)
+
+//    Failed Sort - Bug Fixing #4
+// Oh no, Timmy's Sort doesn't seem to be working? Your task is to fix the sortArray function to sort all numbers in ascending order
+var sortArray = function(value) {
+  return value.split('').sort((c, p) => c - p ).join('');
+}
