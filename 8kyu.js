@@ -587,3 +587,8 @@ class Person {
       return `${this.name}s age is ${this.age}`;
     }
 }
+
+//     Grasshopper - Array Mean
+// Find the mean (average) of a list of numbers in an array.
+
+const findAverage = (nums) => nums.reduce((a,c)=>a+c,0)/nums.length
