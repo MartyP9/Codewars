@@ -592,3 +592,9 @@ class Person {
 // Find the mean (average) of a list of numbers in an array.
 
 const findAverage = (nums) => nums.reduce((a,c)=>a+c,0)/nums.length
+
+//     FIXME: Replace all dots
+// The code provided is supposed replace all the dots . in the specified String str with dashes -
+// But it's not working properly.
+
+const replaceDots = str => str.replaceAll('.', '-');
