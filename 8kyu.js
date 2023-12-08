@@ -598,3 +598,7 @@ const findAverage = (nums) => nums.reduce((a,c)=>a+c,0)/nums.length
 // But it's not working properly.
 
 const replaceDots = str => str.replaceAll('.', '-');
+
+//    Find the Remainder  
+// Write a function that accepts two integers and returns the remainder of dividing the larger value by the smaller value.
+const remainder = (n, m) => n>m?n%m:m%n
