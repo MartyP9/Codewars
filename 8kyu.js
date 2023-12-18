@@ -609,3 +609,9 @@ const remainder = (n, m) => n>m?n%m:m%n
 // Your task is to be more like Chuck (ha! good luck!). You must return false without ever actually using the word false...
 // Go show some truth who's boss!
 const ifChuckSaysSo =()=>!true
+
+//     Merge Two sorted arrays into one
+// You are given two sorted arrays that both only contain integers. Your task is to find a way to merge them into a single one, sorted in asc order. Complete the function mergeArrays(arr1, arr2), where arr1 and arr2 are the original sorted arrays.
+
+// You don't need to worry about validation, since arr1 and arr2 must be arrays with 0 or more Integers. If both arr1 and arr2 are empty, then just return an empty array.
+const mergeArrays1 = (a,b) => [...new Set(a.concat(b).sort((x,y)=>x-y))]
