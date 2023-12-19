@@ -615,3 +615,7 @@ const ifChuckSaysSo =()=>!true
 
 // You don't need to worry about validation, since arr1 and arr2 must be arrays with 0 or more Integers. If both arr1 and arr2 are empty, then just return an empty array.
 const mergeArrays1 = (a,b) => [...new Set(a.concat(b).sort((x,y)=>x-y))]
+
+//    Remove an exclamation mark from the end of string
+// Remove an exclamation mark from the end of a string. For a beginner kata, you can assume that the input data is always a string, no need to verify it.
+const remove = string => string.endsWith('!')? string.slice(0,-1):string
