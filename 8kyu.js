@@ -619,3 +619,10 @@ const mergeArrays1 = (a,b) => [...new Set(a.concat(b).sort((x,y)=>x-y))]
 //    Remove an exclamation mark from the end of string
 // Remove an exclamation mark from the end of a string. For a beginner kata, you can assume that the input data is always a string, no need to verify it.
 const remove = string => string.endsWith('!')? string.slice(0,-1):string
+
+//    Freudian translator
+// In this kata, the function will take a string as its argument, and return a string with every word replaced by the explanation to everything, according to Freud. Note that an empty string, or no arguments, should return an empty string.
+
+const toFreud = s => s.split(' ').map(s=> s? 'sex': '').join(' ')
+// Other solutions
+// const toFreud=s=>s.replace(/[^ ]+/g,'sex')
