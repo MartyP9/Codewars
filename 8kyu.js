@@ -630,3 +630,7 @@ const toFreud = s => s.split(' ').map(s=> s? 'sex': '').join(' ')
 //     String cleaning
 // Your harried co-workers are looking to you for a solution to take this garbled text and remove all of the numbers. Your program will take in a string and clean out all numeric characters, and return a string with spacing and special characters ~#$%^&!@*():;"'.,? all intact.
 const stringClean = s => s.replace(/[0-9]/g, '');
+
+//     Compare within margin
+// Create a function close_compare that accepts 3 parameters: a, b, and an optional margin. The function should return whether a is lower than, close to, or higher than b.
+const closeCompare = (a, b, c=0) => Math.abs(a - b) <= c ? 0 : a < b ? -1 : 1;
