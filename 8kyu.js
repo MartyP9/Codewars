@@ -634,3 +634,8 @@ const stringClean = s => s.replace(/[0-9]/g, '');
 //     Compare within margin
 // Create a function close_compare that accepts 3 parameters: a, b, and an optional margin. The function should return whether a is lower than, close to, or higher than b.
 const closeCompare = (a, b, c=0) => Math.abs(a - b) <= c ? 0 : a < b ? -1 : 1;
+
+//    Semi-Optional
+// We have implemented a function wrap(value) that takes a value of arbitrary type and wraps it in a new JavaScript Object or Python Dict setting the 'value' key on the new Object or Dict to the passed-in value.
+
+const wrap = value => ({value});
