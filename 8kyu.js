@@ -639,3 +639,10 @@ const closeCompare = (a, b, c=0) => Math.abs(a - b) <= c ? 0 : a < b ? -1 : 1;
 // We have implemented a function wrap(value) that takes a value of arbitrary type and wraps it in a new JavaScript Object or Python Dict setting the 'value' key on the new Object or Dict to the passed-in value.
 
 const wrap = value => ({value});
+
+//    Pythagorean Triple
+// Given an unsorted array of 3 positive integers [ n1, n2, n3 ], determine if it is possible to form a Pythagorean Triple using those 3 integers.
+const pyth = arr => {
+  let x = arr.sort((a,b)=> a-b)
+  return (x[0]**2 + x[1]**2) == x[2]**2
+}
