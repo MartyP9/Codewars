@@ -662,3 +662,12 @@ const onlyOne = (...args) => args.filter(Boolean).length === 1
 
 const  areEquallyStrong = (yourLeft, yourRight, friendsLeft, friendsRight) => (yourLeft==friendsLeft && yourRight==friendsRight) || (yourLeft==friendsRight && yourRight==friendsLeft)
 // Other Solution const areEquallyStrong = (a1, a2, b1, b2) =>a1+a2 == b1+b2 && a1*a2 == b1*b2;
+
+//      Lorraine wants to win a tv
+// There are many word games that can help to make our minds more agile. Many TV programs, in different countries, use them as entertainment for the audience. Lorraine had tried to win one of them many times but she was not successful in her attempts. The TV contest is as follows:
+// The TV show host gives a random caller a scrambled word (that is incomprehensible) and by rearranging those letters they have to discover a word that is in the Oxford English Dictionary.They have only 25 seconds to discover the word. Her friend Bruce obtained the list of 2000, frequently used, English words used by the TV show. Help Lorraine by making a function that will give her a list of all valid words that may be obtained by rearranging the scrambled word. There always be at least one valid word for each test case.
+
+function unscramble(scramble) {
+  const a = scramble.split('').sort().join('');
+  return wordList.filter(b => b.split('').sort().join('') === a);
+}
