@@ -660,3 +660,7 @@ class Ship {
    return (this.draft - this.crew*1.5) > 20
  }
 }
+
+//   Double char
+// Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+const doubleChar = str => str.split('').map(s=>s.repeat(2)).join('')
