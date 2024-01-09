@@ -671,3 +671,16 @@ function unscramble(scramble) {
   const a = scramble.split('').sort().join('');
   return wordList.filter(b => b.split('').sort().join('') === a);
 }
+
+//    Return the Missing Element
+// Our sequence given was supposed to contain all of the integers from 0 to 9 (in no particular order), but one of them seems to be missing.
+// Write a function that accepts a sequence of unique integers between 0 and 9 (inclusive), and returns the missing element.
+
+const getMissingElement = arr => {
+  let sum = 0
+  for(let i = 0; i < arr.length; i++){
+      sum += arr[i]
+  }
+  return 45 - sum
+}
+// Other Solution   const getMissingElement = arr => arr.reduce((acc,x)=>acc-x, 45)
