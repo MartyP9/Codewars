@@ -684,3 +684,9 @@ const getMissingElement = arr => {
   return 45 - sum
 }
 // Other Solution   const getMissingElement = arr => arr.reduce((acc,x)=>acc-x, 45)
+
+//    Boiled Eggs
+// Implement a function, which takes a non-negative integer, representing the number of eggs to boil. It must return the time in minutes (integer), which it takes to have all the eggs boiled.
+// You can put at most 8 eggs into the pot at once. It takes 5 minutes to boil an egg
+
+const cookingTime = (eggs) => Math.ceil(eggs/8)*5
