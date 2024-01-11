@@ -690,3 +690,18 @@ const getMissingElement = arr => {
 // You can put at most 8 eggs into the pot at once. It takes 5 minutes to boil an egg
 
 const cookingTime = (eggs) => Math.ceil(eggs/8)*5
+
+//     Minimize Sum Of Array (Array Series #1)
+// Given an array of integers , Find the minimum sum which is obtained from summing each Two integers product. Only positive integers and even length arrays
+
+const minSum = arr => {
+  let sorted = arr.sort((a,b)=>a-b)
+  let result = 0
+  for (let i = 0; i < Math.floor(sorted.length / 2); i++) {
+      result += sorted[i] * sorted[sorted.length - 1 - i];
+    }
+    return result
+}
+// Other solutions
+// const minSum = arr => arr.sort((a,b) => a - b).reduce((acc,curr) => acc + curr * arr.pop(),0)
+// const minSum = arr =>arr.sort((a,b)=>a-b).reduce((s,x,i,a)=>s+x*a[a.length-i-1],0)/2
