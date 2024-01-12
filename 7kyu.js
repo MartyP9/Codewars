@@ -705,3 +705,15 @@ const minSum = arr => {
 // Other solutions
 // const minSum = arr => arr.sort((a,b) => a - b).reduce((acc,curr) => acc + curr * arr.pop(),0)
 // const minSum = arr =>arr.sort((a,b)=>a-b).reduce((s,x,i,a)=>s+x*a[a.length-i-1],0)/2
+
+//     Averages of numbers
+// Write a method, that gets an array of integer-numbers and return an array of the averages of each integer-number and his follower, if there is one.
+const averages = arr =>{
+  if(!arr) return []
+  let newArr = []
+  for(let i = 0; i<arr.length-1; i++){
+      newArr.push((arr[i]+arr[i+1])/2)
+  }
+  return newArr
+}
+// const avg = numbers =>numbers ? numbers.map((v, i, a) => (v + a[i + 1]) / 2).slice(0, -1) : [];
