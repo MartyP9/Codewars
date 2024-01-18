@@ -689,3 +689,24 @@ function myFirstKata(a, b) {
 // Each number should be formatted that it is rounded to two decimal places. You don't need to check whether the input is a valid number because only valid numbers are used in the tests.
 const twoDecimalPlaces = n => Math.round(n * 100) / 100;
 // Other solution const twoDecimalPlaces = n => +n.toFixed(2)
+
+// L1: Bartender, drinks
+// Complete the function that receives as input a string, and produces outputs according to the following table. Make sure you cover the cases where certain words do not show up with correct capitalization. 
+function getDrinkByProfession(param) {
+  switch (param.toLowerCase()) {
+    case 'jabroni':
+      return 'Patron Tequila';
+    case 'school counselor':
+      return 'Anything with Alcohol';
+    case 'programmer':
+      return 'Hipster Craft Beer';
+    case 'bike gang member':
+      return 'Moonshine';
+    case 'politician':
+      return 'Your tax dollars';
+    case 'rapper':
+      return 'Cristal';
+    default:
+      return 'Beer';
+  }
+}
