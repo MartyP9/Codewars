@@ -710,3 +710,11 @@ function getDrinkByProfession(param) {
       return 'Beer';
   }
 }
+
+//      Is this my Tail?
+// Some new animals have arrived at the zoo. The zoo keeper is concerned that perhaps the animals do not have the right tails. To help her, you must correct the broken function to make sure that the second argument (tail), is the same as the last letter of the first argument (body) - otherwise the tail wouldn't fit!
+const correctTail = (body,tail) => body.substr(body.length-(tail.length)) === tail
+//Other solutions
+// const correctTail = (x,y)=>x.endsWith(y)
+// const correctTail = (body, tail) => body[body.length-1] === tail
+// const correctTail = (body, tail) => body.slice(-1) === tail 
