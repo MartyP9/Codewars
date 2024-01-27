@@ -718,3 +718,7 @@ const correctTail = (body,tail) => body.substr(body.length-(tail.length)) === ta
 // const correctTail = (x,y)=>x.endsWith(y)
 // const correctTail = (body, tail) => body[body.length-1] === tail
 // const correctTail = (body, tail) => body.slice(-1) === tail 
+
+  //    Find numbers which are divisible by given number
+  // Complete the function which takes two arguments and returns all numbers which are divisible by the given divisor. First argument is an array of numbers and the second is the divisor.
+  const divisibleBy = (numbers, divisor)=> numbers.filter(x=>x%divisor===0)
