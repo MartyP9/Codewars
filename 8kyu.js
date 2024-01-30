@@ -722,3 +722,7 @@ const correctTail = (body,tail) => body.substr(body.length-(tail.length)) === ta
   //    Find numbers which are divisible by given number
   // Complete the function which takes two arguments and returns all numbers which are divisible by the given divisor. First argument is an array of numbers and the second is the divisor.
   const divisibleBy = (numbers, divisor)=> numbers.filter(x=>x%divisor===0)
+
+  //     Sum Arrays
+  // Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
+  const sum = arr => arr.reduce((a,b)=>a+b,0)
