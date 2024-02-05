@@ -726,3 +726,8 @@ const correctTail = (body,tail) => body.substr(body.length-(tail.length)) === ta
   //     Sum Arrays
   // Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
   const sum = arr => arr.reduce((a,b)=>a+b,0)
+
+//    My head is at the wrong end!  
+// Save the animals by switching them back. You will be given an array which will have three values (tail, body, head). It is your job to re-arrange the array so that the animal is the right way round (head, body, tail).
+// Same goes for all the other arrays/lists that you will get in the tests: you have to change the element positions with the same exact logics
+const fixTheMeerkat=arr=>arr.reverse();
