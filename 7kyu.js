@@ -717,3 +717,10 @@ const averages = arr =>{
   return newArr
 }
 // const avg = numbers =>numbers ? numbers.map((v, i, a) => (v + a[i + 1]) / 2).slice(0, -1) : [];
+
+//    8 towers
+// Write a function that, given N (positive-only integer) the size of the board, returns the number of different combinations in which the towers can be.
+
+function towerCombination(n) {
+  return n === 1 ? 1n : BigInt(n) * BigInt(towerCombination(n-1))
+}
