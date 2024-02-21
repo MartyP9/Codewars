@@ -731,3 +731,7 @@ const correctTail = (body,tail) => body.substr(body.length-(tail.length)) === ta
 // Save the animals by switching them back. You will be given an array which will have three values (tail, body, head). It is your job to re-arrange the array so that the animal is the right way round (head, body, tail).
 // Same goes for all the other arrays/lists that you will get in the tests: you have to change the element positions with the same exact logics
 const fixTheMeerkat=arr=>arr.reverse();
+
+//    Twice as Old
+// Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old). The answer is always greater or equal to 0, no matter if it was in the past or it is in the future.
+const twiceAsOld = (dad, son) => Math.abs(dad - son*2)
