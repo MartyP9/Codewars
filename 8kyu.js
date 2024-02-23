@@ -735,3 +735,7 @@ const fixTheMeerkat=arr=>arr.reverse();
 //    Twice as Old
 // Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old). The answer is always greater or equal to 0, no matter if it was in the past or it is in the future.
 const twiceAsOld = (dad, son) => Math.abs(dad - son*2)
+
+//    Multiply the number
+// Jack really likes his number five: the trick here is that you have to multiply each number by 5 raised to the number of digits of each numbers. For example, if the input is -2 the output should be -10.
+const multiply = (n) => n * 5 ** Math.abs(n).toString().length
