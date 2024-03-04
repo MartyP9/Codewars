@@ -739,3 +739,8 @@ const twiceAsOld = (dad, son) => Math.abs(dad - son*2)
 //    Multiply the number
 // Jack really likes his number five: the trick here is that you have to multiply each number by 5 raised to the number of digits of each numbers. For example, if the input is -2 the output should be -10.
 const multiply = (n) => n * 5 ** Math.abs(n).toString().length
+
+
+//   Easy logs
+// Given a logarithm base X and two values A and B, return a sum of logratihms with the base X: logxA + logxB
+const logs = (x,a,b) => Math.log(a*b)/Math.log(x)
